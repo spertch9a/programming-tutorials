@@ -76,3 +76,10 @@ model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=epochs, bat
 
 scores = model.evaluate(X_test, y_test, verbose=0)
 print("Accuracy: %.2f%%" % (scores[1]*100))
+
+# Save a model
+model.save('SavedModel/my_model.tflearn')
+print("model saved")
+
+# Load a model
+model.load('SavedModel/my_model.tflearn')
