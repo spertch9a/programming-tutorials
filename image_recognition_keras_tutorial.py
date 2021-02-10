@@ -79,7 +79,8 @@ print("Accuracy: %.2f%%" % (scores[1]*100))
 
 # Save a model
 model.save('SavedModel/my_model.tflearn')
-print("model saved")
+print("MODEL SAVED")
 
 # Load a model
 model.load('SavedModel/my_model.tflearn')
+print("MODEL LOADED")
